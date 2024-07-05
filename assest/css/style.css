@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #B76E79; 
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --font-family: 'Arial', sans-serif;
+    --card-background: #ffffff;
+    --card-border: #ced4da;
+    --card-box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 1rem;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    transition: margin 0.4s;
+    margin-left: -250px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+    border-radius: 4px;
+}
+
+.active-sidebar {
+    margin-left: 0;
+}
+
+#main-content {
+    transition: margin 0.4s;
+    margin-left: 0;
+    padding: 2rem;
+    margin-top: 70px;
+}
+
+.active-main-content {
+    margin-left: 250px;
+}
+
+.card {
+    margin-top: 1rem;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 0 10px var(--card-box-shadow);
+    transition: margin-left 0.4s;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+h3 {
+    color: var(--primary-color);
+}
+
+.btn-toggle {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-toggle:hover{
+    background-color: #8D4C52; 
+}
